@@ -1,36 +1,44 @@
-pendWise – JavaScript Foundation
-Project Description
-SpendWise is a simple Budget Tracker application designed to help users manage their budgets, record expenses and calculate their remaining balance.
 
-JavaScript Concepts Implemented
-1. Variables
-Variables are used to store the monthly budget and individual expenses using the let keyword.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-2. Data Types
-The project uses numbers to represent budget amounts and expenses.
+    <header>
+        <h1>SpendWise</h1>
+        <p>Manage your money wisely</p>
+    </header>
 
-3. User Input
-The prompt() function collects the monthly budget and three expenses from the user. The Number() function converts the input into numbers.
+    <main>
+        <section class="container">
+            <h2>My Budget Tracker</h2>
 
-4. Budget Calculations
-JavaScript performs calculations to determine the total expenses and remaining balance.
+            <label for="budget">Monthly Budget (KSh)</label>
+            <input type="number" id="budget" placeholder="Enter your budget">
 
-5. Functions
-The project uses reusable functions:
+            <h3>Add Your Expenses</h3>
 
-calculateTotalExpenses() calculates the total expenses.
-calculateBalance() calculates the remaining budget after expenses.
-6. Displaying Results
-The console.log() function displays the budget, total expenses and remaining balance in the browser console.
+            <input type="number" id="expense1" placeholder="First expense">
+            <input type="number" id="expense2" placeholder="Second expense">
+            <input type="number" id="expense3" placeholder="Third expense">
 
-Project Files
-index.html – Provides the structure of the application.
-style.css – Provides the styling and layout.
-script.js – Contains the JavaScript variables, user input, calculations and functions.
-README.md – Explains the project and JavaScript concepts implemented.
-Technologies Used
-HTML5
-CSS3
-JavaScript
-Author
-Mercy Mualuko
+            <button onclick="calculateBudget()">Calculate Budget</button>
+
+            <div id="result">
+                <p>Your results will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SpendWise © 2026 | Budget Better, Live Better</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
