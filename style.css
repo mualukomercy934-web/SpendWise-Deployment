@@ -1,0 +1,156 @@
+
+/* 1. CSS Color Variables */
+:root {
+    --primary: #123B32;
+    --secondary: #1F7A5A;
+    --accent: #DFF3E8;
+    --background: #F4F8F5;
+    --white: #FFFFFF;
+    --text: #26352F;
+    --border: #D9E5DD;
+}
+
+/* 2. General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 3. Headings */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* 4. Main Heading Card */
+.heading-card {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.heading-card p {
+    color: var(--accent);
+    margin-bottom: 0;
+}
+
+/* 5. Form and Table Cards */
+.form-card,
+.table-card {
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* 6. Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* 7. Button Styling */
+button {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary);
+}
+
+/* 8. Expense Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--white);
+}
+
+/* 9. Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .heading-card,
+    .form-card,
+    .table-card {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
