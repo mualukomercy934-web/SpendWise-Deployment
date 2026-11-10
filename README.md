@@ -1,40 +1,49 @@
- SpendWise – JavaScript Foundation
 
-## Project Description
-SpendWise is a simple Budget Tracker application designed to help users manage their budgets, record expenses and calculate their remaining balance.
+# SpendWise Budget Tracker
 
-## JavaScript Concepts Implemented
+## Project Overview
+SpendWise is a simple budget tracking website designed to help users manage their monthly budgets and monitor their expenses.
 
-### 1. Variables
-Variables are used to store the monthly budget and individual expenses using the `let` keyword.
+The project demonstrates how HTML, CSS, and JavaScript work together to create an interactive website. It is deployed using Netlify and stored on GitHub.
 
-### 2. Data Types
-The project uses numbers to represent budget amounts and expenses.
-
-### 3. User Input
-The `prompt()` function collects the monthly budget and three expenses from the user. The `Number()` function converts the input into numbers.
-
-### 4. Budget Calculations
-JavaScript performs calculations to determine the total expenses and remaining balance.
-
-### 5. Functions
-The project uses reusable functions:
-- `calculateTotalExpenses()` calculates the total expenses.
-- `calculateBalance()` calculates the remaining budget after expenses.
-
-### 6. Displaying Results
-The `console.log()` function displays the budget, total expenses and remaining balance in the browser console.
-
-## Project Files
-- `index.html` – Provides the structure of the application.
-- `style.css` – Provides the styling and layout.
-- `script.js` – Contains the JavaScript variables, user input, calculations and functions.
-- `README.md` – Explains the project and JavaScript concepts implemented.
+## Features
+- Enter a monthly budget.
+- Enter three different expenses.
+- Calculate total expenses automatically.
+- Display the remaining budget.
+- Identify when expenses exceed the budget.
+- Simple and user-friendly design.
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
 
-## Author
-Mercy Mualuko
+### HTML
+HTML provides the structure and content of the website, including headings, input fields, buttons, and sections.
+
+### CSS
+CSS controls the appearance of the website, including colours, spacing, fonts, layouts, and styling.
+
+### JavaScript
+JavaScript adds functionality and interactivity by calculating expenses, checking the remaining balance, and displaying results.
+
+## Project Files
+- `index.html` – Contains the website structure.
+- `style.css` – Contains the website styling.
+- `script.js` – Contains the budget calculation functionality.
+- `README.md` – Explains the project and technologies used.
+
+## Deployment
+The project is stored on GitHub and published online using Netlify.
+
+**Live Website:** https://spendwise-week6.netlify.app
+
+**GitHub Repository:** https://github.com/mualukomercy934-web/SpendWise-Deployment
+
+## How to Use
+1. Open the SpendWise website.
+2. Enter your monthly budget.
+3. Enter your first, second, and third expenses.
+4. Click the Calculate Budget button.
+5. View your total expenses and remaining balance.
+
+## Conclusion
+SpendWise demonstrates the use of HTML, CSS, and JavaScript in developing an interactive budget tracking website. Deploying the project using Netlify makes it accessible online.
