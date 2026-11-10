@@ -1,4 +1,4 @@
-# SpendWise – JavaScript Foundation
+ SpendWise – JavaScript Foundation
 
 ## Project Description
 SpendWise is a simple Budget Tracker application designed to help users manage their budgets, record expenses and calculate their remaining balance.
