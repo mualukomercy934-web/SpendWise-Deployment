@@ -1,30 +1,32 @@
 
-// 1. Store budgeting information
-let budget = 0;
-let expense1 = 0;
-let expense2 = 0;
-let expense3 = 0;
+function calculateBudget() {
+    let budget = Number(document.getElementById("budget").value);
 
+    let expense1 = Number(document.getElementById("expense1").value);
+    let expense2 = Number(document.getElementById("expense2").value);
+    let expense3 = Number(document.getElementById("expense3").value);
 
-// 2. Collect user input
-budget = Number(prompt("Enter your monthly budget (KSh):"));
+    let totalExpenses = expense1 + expense2 + expense3;
 
-expense1 = Number(prompt("Enter your first expense (KSh):"));
-expense2 = Number(prompt("Enter your second expense (KSh):"));
-expense3 = Number(prompt("Enter your third expense (KSh):"));
+    let balance = budget - totalExpenses;
 
-// 3. Function to calculate total expenses
-function calculateTotalExpenses() {
-    return expense1 + expense2 + expense3;
+    let result = document.getElementById("result");
+
+    if (budget <= 0) {
+        result.innerHTML = "Please enter a valid budget.";
+    } else if (balance >= 0) {
+        result.innerHTML =
+            "<h3>Budget Summary</h3>" +
+            "<p>Monthly Budget: KSh " + budget + "</p>" +
+            "<p>Total Expenses: KSh " + totalExpenses + "</p>" +
+            "<p>Remaining Balance: KSh " + balance + "</p>" +
+            "<p>Great job! You are within your budget.</p>";
+    } else {
+        result.innerHTML =
+            "<h3>Budget Summary</h3>" +
+            "<p>Monthly Budget: KSh " + budget + "</p>" +
+            "<p>Total Expenses: KSh " + totalExpenses + "</p>" +
+            "<p>Overspending: KSh " + Math.abs(balance) + "</p>" +
+            "<p>You have exceeded your budget.</p>";
+    }
 }
-
-// 4. Function to calculate remaining balance
-function calculateBalance() {
-    return budget - calculateTotalExpenses();
-}
-
-// 5. Display results in the console
-console.log("===== SPENDWISE BUDGET REPORT =====");
-console.log("Monthly Budget: KSh " + budget);
-console.log("Total Expenses: KSh " + calculateTotalExpenses());
-console.log("Remaining Balance: KSh " + calculateBalance());
