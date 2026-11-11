@@ -1,49 +1,90 @@
+# SpendWise – Budget Tracker
 
-# SpendWise Budget Tracker
+## 1. Project Description
 
-## Project Overview
-SpendWise is a simple budget tracking website designed to help users manage their monthly budgets and monitor their expenses.
+SpendWise is a simple and interactive budget tracking web application developed to help users manage their monthly budgets and monitor their expenses.
 
-The project demonstrates how HTML, CSS, and JavaScript work together to create an interactive website. It is deployed using Netlify and stored on GitHub.
+The application allows users to:
+- Set a monthly budget.
+- Add and record expenses.
+- View expenses in a table.
+- Calculate total expenses.
+- Track their remaining budget balance.
+- Delete expenses when necessary.
 
-## Features
-- Enter a monthly budget.
-- Enter three different expenses.
-- Calculate total expenses automatically.
-- Display the remaining budget.
-- Identify when expenses exceed the budget.
-- Simple and user-friendly design.
+The main goal of SpendWise is to encourage better financial planning and responsible spending.
 
-## Technologies Used
+## 2. Technologies Used
 
-### HTML
-HTML provides the structure and content of the website, including headings, input fields, buttons, and sections.
+The project was developed using:
 
-### CSS
-CSS controls the appearance of the website, including colours, spacing, fonts, layouts, and styling.
+- **HTML5** – Provides the structure of the website.
+- **CSS3** – Used for styling and designing the user interface.
+- **JavaScript** – Handles budget calculations, expense management, and website interactivity.
+- **GitHub** – Used for source code management and project storage.
+- **Netlify** – Used for hosting and deploying the live website.
 
-### JavaScript
-JavaScript adds functionality and interactivity by calculating expenses, checking the remaining balance, and displaying results.
+## 3. GitHub Repository Information
 
-## Project Files
-- `index.html` – Contains the website structure.
-- `style.css` – Contains the website styling.
-- `script.js` – Contains the budget calculation functionality.
-- `README.md` – Explains the project and technologies used.
+**Project Name:** SpendWise-Week6
 
-## Deployment
-The project is stored on GitHub and published online using Netlify.
+**GitHub Username:** mualukomercy934-web
 
-**Live Website:** https://spendwise-week6.netlify.app
+**Repository Link:** https://github.com/mualukomercy934-web/SpendWise-Week6
 
-**GitHub Repository:** https://github.com/mualukomercy934-web/SpendWise-Deployment
+The repository contains the complete source code and project documentation.
 
-## How to Use
-1. Open the SpendWise website.
-2. Enter your monthly budget.
-3. Enter your first, second, and third expenses.
-4. Click the Calculate Budget button.
-5. View your total expenses and remaining balance.
+## 4. Live Netlify Website URL
 
-## Conclusion
-SpendWise demonstrates the use of HTML, CSS, and JavaScript in developing an interactive budget tracking website. Deploying the project using Netlify makes it accessible online.
+The SpendWise application is deployed and accessible online through Netlify.
+
+**Live Website:** https://glittery-muffin-3c7998.netlify.app
+
+## 5. Deployment Process Summary
+
+The following steps were followed to deploy the SpendWise application:
+
+1. Created a public GitHub repository named SpendWise-Week6.
+2. Added the project files, including HTML, CSS, JavaScript, and README.md.
+3. Committed and saved the project files to GitHub.
+4. Downloaded the project repository as a ZIP file.
+5. Extracted the ZIP file on the computer.
+6. Opened Netlify Drop.
+7. Uploaded the extracted project folder to Netlify.
+8. Waited for the deployment process to complete.
+9. Received the live Netlify website URL.
+10. Tested the deployed website to confirm that the budget and expense features were working.
+
+## 6. Challenges Encountered During Deployment
+
+During the development and deployment process, I encountered several challenges:
+
+- Connecting JavaScript functions to HTML buttons.
+- Troubleshooting the Calculate Budget button.
+- Ensuring that the budget and expense input fields were correctly connected.
+- Understanding how to deploy a website using Netlify.
+- Managing project files and ensuring that all required files were included.
+- Testing the live website after deployment.
+
+I addressed these challenges through troubleshooting, correcting code, testing the application, and using Netlify Drop as an alternative deployment method.
+
+## 7. Lessons Learned
+
+Through this project, I learned how to:
+
+- Build a functional web application using HTML, CSS, and JavaScript.
+- Use JavaScript to perform calculations and manipulate webpage content.
+- Connect HTML elements to JavaScript functions.
+- Organize and manage project files using GitHub.
+- Create and maintain a public GitHub repository.
+- Deploy a website using Netlify Drop.
+- Test and troubleshoot a live web application.
+- Understand the importance of README documentation in software projects.
+
+## 8. Conclusion
+
+Developing SpendWise has improved my understanding of web development, JavaScript interactivity, version control, and website deployment.
+
+This project has given me practical experience in building and publishing a functional web application.
+
+**Thank you for exploring SpendWise!**
